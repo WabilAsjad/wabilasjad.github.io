@@ -404,21 +404,7 @@ header {
 }
 
 
-/* Resume */
-
-.resume {
-    background-color: #fff;
-    color: var(--clr-light);
-    text-align: center;  }
     
-.section__title--resume{
-    color: #111;
-}
-
-.resume__body{
-    color: #111; 
-}
-
 
 /* footer */
 
