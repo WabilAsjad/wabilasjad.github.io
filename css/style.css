@@ -292,7 +292,7 @@ header {
 @media (min-width: 600px) {
     .intro {
         display: grid;
-        width: min-content;
+        width: 100%;
         margin: 0 auto;
         grid-column-gap: 1em;
         grid-template-areas: 
