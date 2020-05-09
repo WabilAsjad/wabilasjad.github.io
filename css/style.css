@@ -411,6 +411,7 @@ header {
 footer.footer {
     display: flex;
     background: #111;
+    text-align: center;
     
 }
 
