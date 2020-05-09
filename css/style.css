@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 
-/* Custom Properties, update these for your own design */
+
+/* Custom Properties */
 
 :root {
     --ff-primary: 'Source Sans Pro', sans-serif;
@@ -54,7 +55,7 @@ body {
 }
 
 section {
-    padding: 5em 4.43em;
+    padding: 5em 2em;
 }
 
 img {
@@ -62,9 +63,33 @@ img {
     max-width: 100%;
 }
 
-strong { font-weight: var(--fw-bold) }
+strong { 
+    font-weight: var(--fw-bold); 
+}
 
+:focus {
+    outline: 3px solid var(--clr-accent);
+    outline-offset: 3px;
+}
 
+/*Buttons */
+.btn {
+    display: inline-block;
+    padding: .5em 2.5em;
+    background: var(--clr-accent);
+    color: var(--clr-dark);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: var(--fw-bold);
+    transition: transform 200ms ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
 
 /* Typography */
 
@@ -114,12 +139,18 @@ h3 { font-size: var(--fs-h3) }
 .section__subtitle--about{
     text-align: center;
     background: #ffffff;
+    margin-bottom: 1em;
+}
+
+
+.section__title--experience{
+    text-align: center; 
+    color: #ffffff;
 }
 
 .section__subtitle--experience{
     background: none;
     padding: .25em 1em;
-    font-family: var(--ff-secondary);
     text-align: center;
     color: #ffffff;
 }
@@ -127,7 +158,6 @@ h3 { font-size: var(--fs-h3) }
 .section__subtitle--projects{
     background: #D8D2DC;
     padding: .25em 1em;
-    font-family: var(--ff-secondary);
     text-align: center;
     margin-bottom: 1em;
     color: #ffffff;
@@ -140,11 +170,10 @@ header {
     justify-content: space-between;
     padding: 1em;
 }
-
 .nav {
     position: fixed;
     background: var(--clr-dark);
-    color: var(--clr-light);
+    color: #ffffff;
     top: 0;
     bottom: 0;
     left: 0;
@@ -153,10 +182,10 @@ header {
     
     transform: translateX(100%);
     transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
-    
 }
 
-.nav__list{
+.nav__list {
+    color: #ffffff;
     list-style: none;
     display: flex;
     height: 100%;
@@ -167,18 +196,15 @@ header {
     padding: 0;
 }
 
-
-.nav__link{
-    color: inherit;
-    font-weight: -var(--fw-bold);
+.nav__link {
+    color: #ffffff;
+    font-weight: var(--fw-bold);
     font-size: var(--fs-h2);
     text-decoration: none;
-    
 }
 
-.nav__link:hover{
-    color: var(--clr-accent);
-    
+.nav__link:hover {
+    color: #ffffff;
 }
 
 .nav-toggle {
@@ -186,12 +212,13 @@ header {
     background: transparent;
     border: 0;
     cursor: pointer;
+    position: absolute;
     right: 1em;
     top: 1em;
     z-index: 1000;
 }
 
-.nav-open .nav{
+.nav-open .nav {
     transform: translateX(0);
 }
 
@@ -199,18 +226,21 @@ header {
     position: fixed;
 }
 
-.nav-open .hamburger{
+.nav-open .hamburger {
     transform: rotate(.625turn);
-    
 }
 
-.nav-open .hamburger::before{
+.nav-open .hamburger::before {
     transform: rotate(90deg) translateX(-6px);
 }
 
 .nav-open .hamburger::after {
     opacity: 0;
 }
+
+
+
+
 
 
 .hamburger {
@@ -221,13 +251,13 @@ header {
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-    background: #D8D2DC;
+    background: var(--clr-accent);
     width: 2em;
     height: 3px;
     border-radius: 1em;
-    transition: transform 250ms ease-in-out
-    
+    transition: transform 250ms ease-in-out;
 }
+
 
 .hamburger::before,
 .hamburger::after {
@@ -235,13 +265,13 @@ header {
     position: absolute;
     left: 0;
     right: 0;
-    
 }
 
-.hamburger::before{ top: 6px; }
-.hamburger::after{ bottom: 6px; }
+.hamburger::before { top: 6px; }
+.hamburger::after { bottom: 6px; }
 
 /*  Intro section  */
+
 
 .intro {
     position: relative;
@@ -264,7 +294,7 @@ header {
         display: grid;
         width: min-content;
         margin: 0 auto;
-        grid-column-gap: 12em;
+        grid-column-gap: 1em;
         grid-template-areas: 
             "img title"
             "img subtitle";
@@ -288,9 +318,13 @@ header {
         width: calc(100% + 1.5em);
     }
     
-   
-    /*  My experience section  */
 
+/*  Experience section  */
+.experience{
+    max-width: 500px;
+    margin: 0 auto;
+}
+    
 .my-experience {
     background-color: var(--clr-dark);
     background-image: url(../img/services-bg.jpg);
@@ -305,14 +339,26 @@ header {
     position: relative;
 }
 
-@media (min-width: 800px){
+.section__title--experience::after {
+    content: '';
+    display: block;
+    width: 2em;
+    height: 1px;
+    background: var(--clr-light);
+    opacity: 0.20;
+}
+
+   @media (min-width: 800px){
     .experience {
         display: flex;
         max-width: 1000px;
-        margin: 0 auto;
+        margin-left: auto;
+        margin-right: auto;
         
     }
-    
+    .experience + .experience {
+        margin-left: 2em;
+    } 
 }
 
 /* My Projects */
@@ -323,6 +369,7 @@ header {
     text-align: center;
     
 }
+
 
 .portfolio {
     display: grid;
@@ -352,40 +399,69 @@ header {
 }
 
 
+/* Resume */
 
-/*footer*/
-.footer{
+.resume {
+    background-color: #fff;
+    color: var(--clr-light);
+    text-align: center;  }
+    
+.section__title--resume{
+    color: #111;
+}
+
+.resume__body{
+    color: #111; 
+}
+
+
+/* footer */
+
+.footer {
     background: #111;
     color: var(--clr-accent);
     text-align: center;
+    padding: 2.5em 0;
     font-size: var(--fs-h3);
+
 }
 
-.footer a { color: inherit }
+.footer a { 
+    color: inherit;
+    text-decoration: none;
+}
 
+.footer__link {
+    font-weight: var(--fw-bold);
+}
 
 .footer__link:hover,
 .social-list__link:hover {
     opacity: .7;
 }
 
+.footer__link:hover {
+    text-decoration: underline;
+}
+
 .social-list {
     list-style: none;
     display: flex;
     justify-content: center;
-    margin: 2em 0;
+    margin: 2em 0 0;
     padding: 0;
 }
 
-.social-list__item{
+.social-list__item {
     margin: 0 .5em;
 }
 
-.social-list--link {
+.social-list__link {
     padding: .5em;
 }
 
-}
+
+/*Individual portfolio items*/
 
 .portfolio__item-individual {
     padding: 0 2em 2em;
@@ -397,4 +473,5 @@ header {
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+}
 }
