@@ -318,6 +318,11 @@ header {
         width: calc(100% + 1.5em);
     }
     
+/* About Me section */
+.about-me {
+    text-align: center;
+    
+}
 
 /*  Experience section  */
 .experience{
