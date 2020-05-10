@@ -325,6 +325,10 @@ header {
     margin: 0 auto;
     
 }
+    
+.about-me + .about-me {
+        margin-left: 2em;
+    } 
 
 /*  Experience section  */
 .experience{
