@@ -320,7 +320,9 @@ header {
     
 /* About Me section */
 .about-me__body{
+    max-width: 500px;
     text-align: center;
+    margin: 0 auto;
     
 }
 
