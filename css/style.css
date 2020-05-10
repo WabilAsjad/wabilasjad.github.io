@@ -325,10 +325,10 @@ header {
     margin: 0 auto;
     
 }
+.about-me {
+    text-align: center;
+    }
     
-.about-me + .about-me {
-        margin-left: 2em;
-    } 
 
 /*  Experience section  */
 .experience{
