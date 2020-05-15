@@ -465,6 +465,10 @@ footer.footer {
     padding: .5em;
 }
 
+    
+.section__copy-right {
+    text-align: center;
+    }
 
 /*Individual portfolio items*/
 
