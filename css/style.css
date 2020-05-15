@@ -128,12 +128,10 @@ h3 { font-size: var(--fs-h3) }
     background: #D8D2DC;
     padding: .25em 1em;
     font-family: var(--ff-secondary);
-    text-align: center;
     margin-bottom: 1em; 
 }
 
 .section__title--about{
-    text-align: center;
     background: #ffffff;
 }
 .section__subtitle--about{
