@@ -27,7 +27,7 @@
           0.125em 0.125em 0.25em rgba(0,0,0,.15);
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1px) {
     :root {
         --fs-h1: 4.5rem;
         --fs-h2: 3.75rem;
@@ -161,6 +161,7 @@ h3 { font-size: var(--fs-h3) }
     color: #ffffff;
 }
 
+.
 /* header */
 
 header {
@@ -289,7 +290,7 @@ header {
 
 @media {
     .intro {
-        display: grid;
+        display: flex;
         width: 100%;
         grid-column-gap: 1em;
         grid-template-areas: 
@@ -300,6 +301,7 @@ header {
 } 
     .intro__img {
         grid-area: img;
+        flex:0.5;
         min-width: 250px;
         position: center;
         z-index: 2;
@@ -309,6 +311,7 @@ header {
         align-self: start;
         grid-column: -1 / 1;
         grid-row: 2;
+        flex:1;
         text-align: right;
         position: relative;
         left: -1.5em;
@@ -356,7 +359,7 @@ header {
     opacity: 0.20;
 }
 
-   @media (min-width: 800px){
+   @media (min-width: 100px){
     .experience {
         display: flex;
         max-width: 1000px;
@@ -480,3 +483,4 @@ footer.footer {
     margin-right: auto;
 }
 }
+
