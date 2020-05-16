@@ -291,6 +291,8 @@ header {
 @media {
     .intro {
         display: flex;
+        flex-direction: column;
+        justify-content: column;
         width: 100%;
         grid-column-gap: 1em;
         grid-template-areas: 
@@ -303,7 +305,6 @@ header {
         grid-area: img;
         flex:0.5;
         min-width: 250px;
-        position: center;
         z-index: 2;
     }    
     
