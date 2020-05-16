@@ -312,7 +312,6 @@ header {
         align-self: start;
         grid-column: -1 / 1;
         grid-row: 2;
-        flex:8;
         text-align: right;
         position: center;
         left: -1.5em;
