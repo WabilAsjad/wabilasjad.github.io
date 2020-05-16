@@ -291,7 +291,6 @@ header {
     .intro {
         display: grid;
         width: 100%;
-        margin: 0 auto;
         grid-column-gap: 1em;
         grid-template-areas: 
             "img title"
