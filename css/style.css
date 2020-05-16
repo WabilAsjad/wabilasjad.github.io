@@ -301,7 +301,7 @@ header {
 } 
     .intro__img {
         grid-area: img;
-        flex:1;
+        flex:0.5;
         min-width: 250px;
         position: center;
         z-index: 2;
@@ -311,9 +311,9 @@ header {
         align-self: start;
         grid-column: -1 / 1;
         grid-row: 2;
-        flex:1;
+        flex:8;
         text-align: right;
-        position: relative;
+        position: center;
         left: -1.5em;
         width: calc(100% + 1.5em);
     }
