@@ -427,7 +427,7 @@ footer.footer {
     text-align: center;
     padding: 2.5em 0;
     font-size: var(--fs-h3);
-
+    position: center;
 }
 
  
@@ -468,7 +468,6 @@ footer.footer {
     
 .copyright {
     text-align: center;
-    padding: 0;
     }
 
 /*Individual portfolio items*/
