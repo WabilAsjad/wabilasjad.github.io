@@ -308,7 +308,7 @@ header {
         z-index: 2;
     }    
     
-    .section__subtitle--intro {
+    .beginning {
         align-self: start;
         grid-column: -1 / 1;
         grid-row: 2;
