@@ -65,6 +65,7 @@ img {
 .intro__img {
   display: block;
   max-width: 40%;
+ justify-content: center;
 }
 
 strong {
