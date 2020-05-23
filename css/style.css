@@ -65,11 +65,13 @@ img {
 .intro__img {
   display: block;
   max-width: 40%;
- justify-content: center;
+  justify-content: center;
+  display:inline-flex;
 }
 
 strong {
     font-weight: var(--fw-bold);
+
 }
 
 :focus {
@@ -117,10 +119,7 @@ h3 { font-size: var(--fs-h3) }
 .section__title--intro {
     font-weight: var(--fw-reg);
     text-align: center;
-}
-
-.section__title--intro strong {
-    display: block;
+    display:block;
 }
 
 .section__subtitle {
@@ -128,6 +127,15 @@ h3 { font-size: var(--fs-h3) }
     font-size: var(--fs-h3);
     background: #D8D2DC;
     display: block;
+}
+.extras{
+  float:right;
+}
+
+#home{
+  display: inline-grid;
+  justify-content: center;
+
 }
 
 .section__subtitle--intro{
@@ -333,6 +341,7 @@ footer.footer {
     color: var(--clr-accent);
     text-align: center;
     padding: 2.5em 0;
+    padding-bottom: 1.0em;
     font-size: var(--fs-h3);
     justify-content: center;
 }
@@ -362,6 +371,7 @@ footer.footer {
     display:flex;
     justify-content: center;
     padding: 0;
+    margin-bottom: 0em;
 }
 
 .social-list__item {
@@ -369,14 +379,19 @@ footer.footer {
 }
 
 .social-list__link {
-    padding: .5em;
+    padding: 1em;
 }
 
 .copyright {
     display: flex;
     text-align: center;
     justify-content: center;
+    background: #111;
+    color: white;
+    margin-top: 0em;
+    font-size: var(--fs-h6);
 }
+
 
 /*Individual portfolio items*/
 
