@@ -63,15 +63,14 @@ img {
 }
 
 .intro__img {
-  display: block;
-  max-width: 40%;
+  display: inline-block;
+  max-width: 30%;
   justify-content: center;
   display:inline-flex;
 }
 
 strong {
     font-weight: var(--fw-bold);
-
 }
 
 :focus {
@@ -114,6 +113,7 @@ h3 { font-size: var(--fs-h3) }
 
 .section__title {
     margin-bottom: .1em;
+    display: inline-block;
 }
 
 .section__title--intro {
@@ -133,11 +133,10 @@ h3 { font-size: var(--fs-h3) }
 }
 
 #home{
-  display: inline-grid;
+  display: flex;
   justify-content: center;
 
 }
-
 .section__subtitle--intro{
     background: #D8D2DC;
     padding: .25em 1em;
@@ -153,7 +152,6 @@ h3 { font-size: var(--fs-h3) }
     background: #ffffff;
     margin-bottom: 1em;
 }
-.
 
 .section__title--experience{
     text-align: center;
@@ -204,27 +202,47 @@ h3 { font-size: var(--fs-h3) }
 
     /* Change the link color to #111 (black) on hover */
     li a:hover {
-      background-color: #111;
+      background-color: #D8D2DC;
     }
 }
 
+/*  Navbar  */
+.nav{
+  background-color: #D8D2DC;
+  font-family:var(--ff-primary);
+}
+
+.container{
+    background-color: #D8D2DC;
+}
+
+ul .nav__item {
+ display: inline-block;
+ margin: -10px 0px -10px 0px;
+ list-style: none;
+ text-decoration: none;
+ font-size: 25px;
+ padding: 10px;
+ font-color: #eeeeee;
+}
+#nav_important{
+  float: right;
+}
+
+li a:hover {
+ color: #ffffff;
+}
+
+
 /*  Intro section  */
-
-
-.intro {
-    position: relative;
-}
-
-.section__subtitle--intro {
-    display: inline-block;
-}
 
 .intro {
     background-color: #D8D2DC;
     background-size: cover;
     color: var(--clr-light);
     text-align: center;
-
+    display: inline-block;
+    padding: 150px;
 }
 
 @media {
@@ -240,14 +258,14 @@ h3 { font-size: var(--fs-h3) }
         grid-template-columns: min-content max-content;
     }
 }
-    .intro__img {
+.intro__img {
         grid-area: img;
         flex:0.5;
         min-width: 250px;
-        z-index: 2;
+        z-index: 1;
     }
 
-    .beginning {
+/* .beginning {
         align-self: start;
         grid-column: -1 / 1;
         grid-row: 2;
@@ -255,7 +273,7 @@ h3 { font-size: var(--fs-h3) }
         position: center;
         left: -1.5em;
         width: calc(100% + 1.5em);
-    }
+    } */
 
 /* About Me section */
 .about-me__body{
@@ -265,7 +283,7 @@ h3 { font-size: var(--fs-h3) }
 }
 .about-me {
     text-align: center;
-    }
+}
 
 
 /*  Experience section  */
@@ -318,7 +336,6 @@ h3 { font-size: var(--fs-h3) }
     text-align: center;
 
 }
-
 
 .portfolio {
     display: grid;
