@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 /* Custom Properties */
 
 :root {
@@ -128,14 +127,10 @@ h3 { font-size: var(--fs-h3) }
     background: #D8D2DC;
     display: block;
 }
-.extras{
-  float:right;
-}
 
 #home{
   display: flex;
   justify-content: center;
-
 }
 .section__subtitle--intro{
     background: #D8D2DC;
@@ -176,68 +171,30 @@ h3 { font-size: var(--fs-h3) }
 
 /* header */
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    padding: 1em;
+.nav ul {
+  list-style-type: none;
+  text-align: right;
+  overflow: hidden;
+  color:#9400D3;
+  margin-right: 0px;
 }
-.nav {
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color: #333;
-    }
-
-
-    li a {
-      float: right;
-      display: inline;
-      color: #D8D2DC;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-    }
-
-    /* Change the link color to #111 (black) on hover */
-    li a:hover {
-      background-color: #D8D2DC;
-    }
-}
-
-/*  Navbar  */
-.nav{
-  background-color: #D8D2DC;
-  font-family:var(--ff-primary);
-}
-
-.container{
-    background-color: #D8D2DC;
-}
-
 ul .nav__item {
  display: inline-block;
- margin: -10px 0px -10px 0px;
+ margin-top: -20px;
+ padding: 10px;
+ /* margin: -300px 0px 200px 0px; */
  list-style: none;
  text-decoration: none;
  font-size: 25px;
- padding: 10px;
  font-color: #eeeeee;
-}
-#nav_important{
-  float: right;
-}
 
-li a:hover {
- color: #ffffff;
 }
-
 
 /*  Intro section  */
 
 .intro {
-    background-color: #D8D2DC;
+    background: rgb(216,210,220);
+    background: linear-gradient(35deg, rgba(216,210,220,1) 51%, rgba(255,255,255,1) 75%);
     background-size: cover;
     color: var(--clr-light);
     text-align: center;
@@ -265,15 +222,10 @@ li a:hover {
         z-index: 1;
     }
 
-/* .beginning {
-        align-self: start;
-        grid-column: -1 / 1;
-        grid-row: 2;
-        text-align: right;
-        position: center;
-        left: -1.5em;
-        width: calc(100% + 1.5em);
-    } */
+#major-year
+{
+    background: 0;
+}
 
 /* About Me section */
 .about-me__body{
@@ -365,8 +317,6 @@ li a:hover {
 }
 
 
-
-
 /* footer */
 
 footer.footer {
@@ -447,12 +397,11 @@ footer.footer {
     margin-right: auto;
 }
 }
-/* background: linear-gradient(35deg, #CCFFFF, #FFCCCC); 
+/* background: linear-gradient(35deg, #CCFFFF, #FFCCCC);
 <div class="ball" id= "ball1"></div>
  div:hover {
     transform: scale(1.1);
   }
-
   #ball {
     width: 70px;
     height: 70px;
@@ -468,23 +417,15 @@ footer.footer {
     animation-name: fade;
     animation-duration: 3s;
   }
-
   @keyframes fade {
     50% {
       left: 60%;
       opacity: 0.1;
     }
   }
-
 </style>
-
 <div id="ball">
 </div>
-
-
-
-
-
 <style>
   .back {
     position: fixed;
@@ -499,7 +440,6 @@ footer.footer {
     animation-duration: 1s;
     animation-iteration-count: infinite;
   }
-
   .heart {
     position: absolute;
     margin: auto;
@@ -514,7 +454,6 @@ footer.footer {
     animation-name: beat;
     animation-duration: 1s;
     animation-iteration-count: infinite;
-
   }
   .heart:after {
     background-color: pink;
@@ -525,7 +464,7 @@ footer.footer {
     height: 50px;
     top: 0px;
     left: 25px;
-  
+
   }
   .heart:before {
     background-color: pink;
@@ -537,13 +476,11 @@ footer.footer {
     top: -25px;
     left: 0px;
   }
-
   @keyframes backdiv {
     50% {
       background: #ffe6f2;
     }
   }
-
   @keyframes beat {
     0% {
       transform: scale(1) rotate(-45deg);
@@ -552,10 +489,7 @@ footer.footer {
       transform: scale(0.6) rotate(-45deg);
     }
   }
-
 </style>
 <div class="back"></div>
 <div class="heart"></div>
-
-
 */
