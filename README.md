@@ -1,7 +1,9 @@
 # Personal Portfolio Website. 
 
 This is my online portfolio, with access to my resume and a few projects I've worked on. 
-(wabil.me)
+
+
+View it here: wabil.me
 
 
 ## Deployment
