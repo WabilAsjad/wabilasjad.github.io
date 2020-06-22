@@ -42,7 +42,6 @@ html {
     scroll-behavior: smooth;
 }
 
-
 body {
     background: var(--clr-light);
     color: var(--clr-dark);
@@ -61,13 +60,6 @@ img {
     max-width: 100%;
 }
 
-.intro__img {
-  display: inline-block;
-  max-width: 30%;
-  justify-content: center;
-  display:inline-flex;
-}
-
 strong {
     font-weight: var(--fw-bold);
 }
@@ -77,24 +69,6 @@ strong {
     outline-offset: 3px;
 }
 
-/*Buttons */
-.btn {
-    display: inline-block;
-    padding: .5em 2.5em;
-    background: var(--clr-accent);
-    color: var(--clr-dark);
-    text-decoration: none;
-    cursor: pointer;
-    font-size: .8rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: var(--fw-bold);
-    transition: transform 200ms ease-in-out;
-}
-
-.btn:hover {
-    transform: scale(1.1);
-}
 
 /* Typography */
 
@@ -170,24 +144,28 @@ h3 { font-size: var(--fs-h3) }
 
 
 /* header */
+.container {
+  height: 35vh;
+  margin-bottom: auto;
+}
+
+.nav {
+  margin-left: auto;
+  margin-bottom: auto;
+}
 
 .nav ul {
   list-style-type: none;
-  text-align: right;
   overflow: hidden;
-  color:#9400D3;
-  margin-right: 0px;
+  font-color: #000000;
 }
-ul .nav__item {
+
+.nav__item {
  display: inline-block;
- margin-top: -20px;
  padding: 10px;
- /* margin: -300px 0px 200px 0px; */
  list-style: none;
  text-decoration: none;
  font-size: 25px;
- font-color: #eeeeee;
-
 }
 
 /*  Intro section  */
@@ -197,11 +175,13 @@ ul .nav__item {
     background: linear-gradient(35deg, rgba(216,210,220,1) 51%, rgba(255,255,255,1) 75%);
     background-size: cover;
     color: var(--clr-light);
-    text-align: center;
     display: inline-block;
-    padding: 150px;
-}
+    height: 100vh;
 
+}
+.intros {
+    text-align: center;
+}
 @media {
     .intro {
         display: flex;
@@ -231,12 +211,19 @@ ul .nav__item {
 .about-me__body{
     max-width: 1000px;
     margin: 0 auto;
-
+    display: grid;
+    padding: 0px 50px 50px 50px;
 }
 .about-me {
     text-align: center;
+    height: 100vh;
 }
-
+.section__title--about {
+    padding: 100px 5px 5px 5px;
+}
+.section__subtitle--about {
+    padding: 10px;
+}
 
 /*  Experience section  */
 .experience{
@@ -250,12 +237,13 @@ ul .nav__item {
     background-size: cover;
     color: var(--clr-light);
     text-align: center;
-
+    height: 100vh;
 }
 
 .section__title--experience {
     color: var(--clr-accent);
     position: relative;
+    padding: 100px 5px 5px 5px;
 }
 
 .section__title--experience::after {
@@ -273,11 +261,28 @@ ul .nav__item {
         max-width: 1000px;
         margin-left: auto;
         margin-right: auto;
-
     }
     .experience + .experience {
         margin-left: 2em;
     }
+}
+/*Buttons */
+.btn {
+    display: inline-block;
+    padding: .5em 2.5em;
+    background: var(--clr-accent);
+    color: var(--clr-dark);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: var(--fw-bold);
+    transition: transform 200ms ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.1);
 }
 
 /* My Projects */
@@ -286,12 +291,14 @@ ul .nav__item {
     background-color: #D8D2DC;
     color: var(--clr-light);
     text-align: center;
-
+    height: 100vh;
 }
 
 .portfolio {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding-top: 30px;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
 }
 
 .portfolio__item{
@@ -313,9 +320,7 @@ ul .nav__item {
 .portfolio__item:focus .portfolio__img{
     transform: scale(1.2);
     opacity: .75;
-
 }
-
 
 /* footer */
 
@@ -323,7 +328,6 @@ footer.footer {
     display: flex;
     background: #111;
     text-align: center;
-
 }
 
 .footer {
@@ -336,11 +340,9 @@ footer.footer {
     justify-content: center;
 }
 
-
 .footer a {
     color: inherit;
     text-decoration: none;
-
 }
 
 .footer__link {
@@ -382,7 +384,6 @@ footer.footer {
     font-size: var(--fs-h6);
 }
 
-
 /*Individual portfolio items*/
 
 .portfolio__item-individual {
@@ -397,99 +398,3 @@ footer.footer {
     margin-right: auto;
 }
 }
-/* background: linear-gradient(35deg, #CCFFFF, #FFCCCC);
-<div class="ball" id= "ball1"></div>
- div:hover {
-    transform: scale(1.1);
-  }
-  #ball {
-    width: 70px;
-    height: 70px;
-    margin: 50px auto;
-    position: fixed;
-    left: 20%;
-    border-radius: 50%;
-    background: linear-gradient(
-      35deg,
-      #ccffff,
-      #ffcccc
-    );
-    animation-name: fade;
-    animation-duration: 3s;
-  }
-  @keyframes fade {
-    50% {
-      left: 60%;
-      opacity: 0.1;
-    }
-  }
-</style>
-<div id="ball">
-</div>
-<style>
-  .back {
-    position: fixed;
-    padding: 0;
-    margin: 0;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: white;
-    animation-name: backdiv;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-  }
-  .heart {
-    position: absolute;
-    margin: auto;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: pink;
-    height: 50px;
-    width: 50px;
-    transform: rotate(-45deg);
-    animation-name: beat;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-  }
-  .heart:after {
-    background-color: pink;
-    content: "";
-    border-radius: 50%;
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    top: 0px;
-    left: 25px;
-
-  }
-  .heart:before {
-    background-color: pink;
-    content: "";
-    border-radius: 50%;
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    top: -25px;
-    left: 0px;
-  }
-  @keyframes backdiv {
-    50% {
-      background: #ffe6f2;
-    }
-  }
-  @keyframes beat {
-    0% {
-      transform: scale(1) rotate(-45deg);
-    }
-    50% {
-      transform: scale(0.6) rotate(-45deg);
-    }
-  }
-</style>
-<div class="back"></div>
-<div class="heart"></div>
-*/
