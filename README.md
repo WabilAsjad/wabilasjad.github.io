@@ -14,3 +14,7 @@ Github Pages
 ## Acknowledgments
 
 * Animista for two text animations
+
+## Loading Errors
+
+Please let me know if there are any issues with the website by opening an issue. Thanks!
