@@ -2,6 +2,12 @@
 
 This is my online portfolio, with access to my resume and a few projects I've worked on. 
 
+View it here: wabil.me
+
+## Preview
+![Error 404](https://github.com/wabilasjad/wabilasjad.github.io/blob/master/home.png)
+![Error 4040](https://github.com/wabilasjad/wabilasjad.github.io/blob/master/exp.png)
+
 ## Deployment
 
 Github Pages
@@ -14,3 +20,7 @@ Github Pages
 ## Acknowledgments
 
 * Animista for two text animations
+
+## Loading Errors
+
+Please let me know if there are any issues with the website by opening an issue. Thanks!
