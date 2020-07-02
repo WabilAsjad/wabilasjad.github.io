@@ -5,8 +5,8 @@ This is my online portfolio, with access to my resume and a few projects I've wo
 View it here: wabil.me
 
 ## Preview
-![Error 404](https://github.com/wabilasjad/wabilasjad.github.io/blob/master/home.png)
-![Error 404](https://github.com/wabilasjad/wabilasjad.github.io/blob/master/exp.png)
+![Error 404](https://github.com/wabilasjad/wabilasjad.github.io/blob/master/img/home.png)
+![Error 404](https://github.com/wabilasjad/wabilasjad.github.io/blob/master/img/exp.png)
 
 ## Deployment
 
