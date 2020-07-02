@@ -6,7 +6,7 @@ View it here: wabil.me
 
 ## Preview
 ![Error 404](https://github.com/wabilasjad/wabilasjad.github.io/blob/master/home.png)
-![Error 4040](https://github.com/wabilasjad/wabilasjad.github.io/blob/master/exp.png)
+![Error 404](https://github.com/wabilasjad/wabilasjad.github.io/blob/master/exp.png)
 
 ## Deployment
 
