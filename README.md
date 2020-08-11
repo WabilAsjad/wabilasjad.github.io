@@ -2,7 +2,7 @@
 
 This is my online portfolio, with access to my resume and a few projects I've worked on. 
 
-View it here: wabil.me
+View it here: wabilasjad.github.io
 
 ## Preview
 ![Error 404](https://github.com/wabilasjad/wabilasjad.github.io/blob/master/img/home.png)
